@@ -1,0 +1,95 @@
+/* SideBarNav Stylesheet */
+
+
+body {
+  font-family: "Arial", serif;
+  background-color: #334252;
+  color: #f75940;
+  overflow-x:hidden;
+}
+
+.navbar {
+  background-color: #3dc7be;
+  overflow: hidden;
+  height: 63px;
+}
+
+.navbar a{
+  float: left;
+  display: block;
+  color: #f75940;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar ul{
+  margin: 8px 0px 0px 0px;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar a:hover{
+  background-color:#334252;
+  color:#3dc7be;
+  text-transform: uppercase;
+}
+
+.sidenav .btn-close {
+  position:absolute;
+  top: 0px;
+  right: 22px;
+  font-size: 36px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#364857;
+  opacity: 0.9;
+  overflow-x:hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a{
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #f75940;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover{
+  color: #3dc7be;
+}
+
+#main {
+  transition:margin-left 0.5s;
+  padding: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+
+p {
+  color: #3dc7be;
+  width: 400px;
+}
+
+/* Media Queries */
+
+@media(max-width: 720px) {
+  .navbar-nav{display:none}
+  p{width: 300px}
+}
+
+@media(min-width: 720px) {
+  .open-slide{display:none}
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Side Menu</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <span class="open-slide">
+        <a href="#" id="hamburger" >
+          <!--SVG Hamburger Icon (Hidden when >568px)-->
+          <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#f75940" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#f75940" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#f75940" stroke-width="5"/>
+          </svg>
+        </a>
+      </span>
+      <!--Desktop Style Navigation Bar -->
+      <ul class="navbar-nav">
+        <li><a href="#">Placeholder</a></li>
+        <li><a href="#">Placeholder</a></li>
+        <li><a href="#">Placeholder</a></li>
+        <li><a href="#">Placeholder</a></li>
+      </ul>
+    </nav>
+    <!--Hamburger Navigation for Mobile -->
+    <div id="sidemenu" class="sidenav">
+      <a href="#" class="btn-close" id="exit" >&times;</a>
+      <a href="#">Placeholder</a>
+      <a href="#">Placeholder</a>
+      <a href="#">Placeholder</a>
+      <a href="#">Placeholder</a>
+    </div>
+    <div id="main">
+      <h1>Responsive Side Menu</h1>
+      <p> Here's a demo for a responsive navigation menu.
+        The hamburger menu will show if the screen isn't wide enough to
+        show the full nav bar at the top.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
